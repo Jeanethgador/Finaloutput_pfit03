@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set to viewport height */
+    align-items: center;
+   
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Add blur effect to the background */
+    z-index: -1;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 3; /* Ensure the container is on top of the blurred background */
+}
+.content1 h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    margin-left: 25%;
+    align-items: center;
+}
+.content1 p{
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+nav .logo {
+    margin: 0;
+    font-size: 1.5em;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover{
+    color: yellowgreen;
+    transform: scale(1.1) translateY(5px);
+    
+}
+nav a span{
+    color: yellowgreen;
+}
+.hero {
+    color: rgb(26, 25, 25);
+    text-align: center;
+    padding: 100px 0;
+}
+.hero h2 {
+    margin-bottom: 20px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-style: normal;
+}
+.cta-button:hover{
+    background-color:white;
+    color: pink;
+}
+.slider-container{
+    width: 100%;
+    height: 100%;
+    background-image: url(image/bground1.jpg) transparent;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.slider-image{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 5%;
+    margin-left: 6.5%;
+}
+.slider-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.slider img{
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+}
+.slider-image .slider-img:first-child, .slider-image .slider-img:last-child{
+    height: 450px;
+}
+.slider-image .slider-img:nth-child(2), .slider-image .slider-img:nth-child(5){
+    height: 450px;
+}
+.slider-image .slider-img:nth-child(3), .slider-image .slider-img:nth-child(4){
+    height: 450px;
+}
+
+</style>
+<body>
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html"><span>ABOUT</span></a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="posts/blog.php">BLOG</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="slider-container">
+        <div class="slider-image">
+            <div class="slider-img">
+                <img src="posts/image/nature10.jpg" alt="1">
+                <div class="../details">
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="posts/image/nature11.jpg" alt="1">
+                <div class="details">
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="posts/image/nature12.jpg" alt="1">
+                <div class="details">
+                </div> 
+            </div>
+            </div>  
+        </div>
+    </section>
+    <div class="container center-content">
+        <div class="content1">
+        <h2>
+            “Never waste any amount of time doing anything important when there
+             is a sunset outside that you should be sitting under.”" <br>
+            - c.Joybell C.</p>
+         </div>
+    </div>
+</body>
+</html>

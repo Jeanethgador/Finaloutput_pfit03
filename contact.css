@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+body img{
+  width: 100vh;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px); /* Add blur effect to the background */
+  z-index: -1;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 1; /* Ensure the container is on top of the blurred background */
+}
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+nav .logo {
+  margin: 0;
+  font-size: 1.5em;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav a:hover{
+  color: yellowgreen;
+  transform: scale(1.1) translateY(5px);
+  
+}
+nav a span{
+  color: yellowgreen;
+}
+.hero {
+  color: rgb(26, 25, 25);
+  text-align: center;
+  padding: 100px 0;
+}
+.hero h2 {
+  margin-bottom: 20px;
+}
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -50%;
+}
+.contact .content1{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content1 h2{
+  font-size: 38px;
+  font-weight: 500;
+  color: black;
+}
+.container1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container1 .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container1 .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container1 .contactInfo .box .icon{
+  min-width:60px;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container1 .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color:black;
+  flex-direction:column;
+  font-weight: 300;
+}
+.container1 .contactInfo .box .text{
+  font-weight: 600;
+  color: black;
+}
+.contactForm{
+  width: 90%;
+  padding:40px;
+  background-color:rgb(122, 120, 120) transparent;
+  margin-left: 25%;
+  border-radius: 10px;
+  box-shadow: 20% solid black;
+}
+.contactForm h2{
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+}
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 5px 0;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+}

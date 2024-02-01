@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTY NATURE'S BLOG</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set to viewport height */
+    
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Add blur effect to the background */
+    z-index: -1;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1; /* Ensure the container is on top of the blurred background */
+}
+.container1 h1{
+    font-weight: 600;
+    font-size: 60px;
+    position: relative;
+    margin: 30px auto;
+    margin-top: 5%;
+    text-align: center;
+}
+.container1 h1::before{
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: yellowgreen;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.container h2{
+   color: black;
+   font-size: 60px;
+   width: 1130px;
+   margin: 30px auto;
+   text-align: center;
+}
+.container h2:hover{
+    color: yellowgreen;
+}
+
+.container1 p{
+    font-weight: 600;
+    font-size: 25px;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+nav .logo {
+    margin: 0;
+    font-size: 1.5em;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover{
+    color: yellowgreen;
+    transform: scale(1.1) translateY(5px);
+    
+}
+nav a span{
+    color: yellowgreen;
+}
+.hero {
+    color: rgb(26, 25, 25);
+    text-align: center;
+    padding: 100px 0;
+}
+.hero h2 {
+    margin-bottom: 20px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-style: normal;
+}
+.cta-button:hover{
+    background-color:white;
+    color: pink;
+}
+.featured {
+    padding: 30px 0;
+}
+.feature-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.feature-box img {
+height: 350px;
+width: 300px;
+padding: 20px 30px;
+background:transparent;
+border-radius: 10px;
+margin: 15px;
+position: relative;
+overflow: hidden;
+text-align: center;
+}
+.feature-box img:hover{
+    transform: scale(1.1) translateY(5px);
+}
+.heading{
+background: transparent;
+margin-top: -5%;
+width: 70% 70%;
+justify-content: center;
+}
+.heading h2{
+color: black;
+font-size: 60px;
+width: 1130px;
+margin: 30px auto;
+text-align: center;
+margin-top: 5%;
+}
+.heading h2:hover{
+    color: pink;
+}
+h2 span{
+    margin-top: 5%;
+}
+.heading p{
+font-size: 18px;
+font-weight: 600;
+color: black;
+text-align: center;
+}
+.heading-container{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 400px;
+
+}
+.heading-box{
+height: 200px;
+width: 300px;
+padding: 20px 30px;
+background:transparent;
+border-radius: 10px;
+margin: 15px;
+position: relative;
+overflow: hidden;
+text-align: center;
+}
+.heading-box img{
+width: 200px;
+height: 100px;
+}
+.heading-box img:hover{
+    transform: scale(1.1) translateY(5px);
+}
+.heading-box p{
+color: black;
+}
+.heading-box a{
+color: white;
+font-style: normal;
+text-align: center;
+font-weight: 300;
+font-size: 18px;
+text-decoration: none;
+}
+.heading-box button{
+width: 100px;
+height: 35px;
+position: relative;
+left: 230px;
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 10px;
+}
+.heading-box button:hover{
+background-color: deeppink;
+}
+ 
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="posts/blog.php">BLOG</a></li>
+                    <li><a href="gallery.html"><span>GALLERY</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="Home">
+        <div class="container1">
+            <h1>BEAUTY NATURE'S GALLERY</h1>
+            <p>"Fashion is temporary, but nature never goes out of style.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="featured" id="About">
+        <div class="container">
+            <div class="feature-box">
+                <img src="posts/image/nature1.jpg" alt="Feature 1">
+                <img src="posts/image/nature2.jpg" alt="Feature 2">
+                <img src="posts/image/nature3.jpg" alt="Feature 3">
+                
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="featured-1" id="About">
+        <div class="container">
+            <div class="feature-box">
+                <img src="posts/image/nature7.jpg" alt="Feature 1">
+                <img src="posts/image/nature5.jpg" alt="Feature 2">
+                <img src="posts/image/nature6.jpg" alt="Feature 3">
+                
+            </div>
+        </div>
+        </div>
+    </section>
+</section>
+
+      
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTY NATURE'S  BLOG</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set to viewport height */
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: url('posts/image/nature14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Add blur effect to the background */
+    z-index: -1;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1; /* Ensure the container is on top of the blurred background */
+}
+.container1 h1{
+    font-weight: 600;
+    font-size: 60px;
+    position: relative;
+    margin: 30px auto;
+    margin-top: 5%;
+    text-align: center;
+    color: yellowgreen;
+}
+.container1 h1::before{
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: yellowgreen;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.container h2{
+   color: white;
+   font-size: 60px;
+   width: 1130px;
+   margin: 30px auto;
+   text-align: center;
+}
+.container h2:hover{
+    color: paleturquoise;
+}
+
+.container1 p{
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+.container h3 {
+    color: white;
+}
+.container p{
+    color:white;
+}
+/*---MAIN STYLE---*/
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: yellowgreen;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: yellowgreen;
+}
+.center-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-style: normal;
+}
+.cta-button:hover{
+    background-color:white;
+    color: palevioletred;
+}
+.featured {
+    padding: 80px 0;
+}
+.feature-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.feature-box img {
+height: 200px;
+width: 300px;
+padding: 20px 30px;
+background:transparent;
+border-radius: 10px;
+margin: 15px;
+position: relative;
+overflow: hidden;
+text-align: center;
+}
+.feature-box img:hover{
+    transform: scale(1.1) translateY(5px);
+}
+.heading{
+background: transparent;
+margin-top: -5%;
+width: 70% 70%;
+justify-content: center;
+}
+.heading h2{
+color: white;
+font-size: 60px;
+width: 1130px;
+margin: 30px auto;
+text-align: center;
+margin-top: 5%;
+}
+.heading h2:hover{
+    color: palevioletred;
+}
+h2 span{
+    margin-top: 5%;
+}
+.heading p{
+font-size: 18px;
+font-weight: 600;
+color: white;
+text-align: center;
+}
+.heading-container{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 400px;
+
+}
+.heading-box{
+height: 200px;
+width: 300px;
+padding: 20px 30px;
+background:transparent;
+border-radius: 10px;
+margin: 15px;
+position: relative;
+overflow: hidden;
+text-align: center;
+}
+.heading-box img{
+width: 200px;
+height: 100px;
+}
+.heading-box img:hover{
+    transform: scale(1.1) translateY(5px);
+}
+.heading-box p{
+color: white;
+}
+.heading-box a{
+color: white;
+font-style: normal;
+text-align: center;
+font-weight: 300;
+font-size: 18px;
+text-decoration: none;
+}
+.heading-box button{
+width: 100px;
+height: 35px;
+position: relative;
+left: 230px;
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 10px;
+}
+.heading-box button:hover{
+background-color: darkgreen;
+}
+
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">KIMJe</h2>
+            </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html"><span>HOME</span></a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="../posts/blog.php">BLOG</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                    </ul>
+            </div>
+        </div> 
+
+    <!-- Hero Section -->
+    <header class="hero" id="Home">
+        <div class="container1">
+            <h1>BEAUTY NATURE'S<span> BLOG</span></h1> 
+            <p>
+                "Nature is pleased with simplicity. And nature is no dummy."
+                - Isaac Newton </p>
+            <a href="posts/image/quotes1.jpg" class="cta-button">SEE MORE</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="featured" id="About">
+        <div class="container">
+            <div class="feature-box">
+                <img src="posts/image/images17.jpeg" alt="Feature 1">
+                <img src="posts/image/nature20.jpg" alt="Feature 1">
+                <img src="posts/image/nature21.jpg" alt="Feature 1">
+                <h3>“Nature will bear the closest inspection. She invites us to
+                     lay our eye level with her smallest leaf, and take an insect view of its plain.”
+                     -Henry David Thoreau
+                </p>
+                <a href="../posts/blog.php" class="cta-button">Explore More</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
